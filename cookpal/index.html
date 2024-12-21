@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>My CookPal App</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <!-- Nav Left -->
+        <div class="nav--left">
+          <img
+            src="./images/menu.svg"
+            alt="menu"
+          />
+          <img
+            src="./images/logo.svg"
+            alt="CookPal"
+          />
+        </div>
+        <!-- Nav Center -->
+        <div class="nav--center">
+          <div>
+            <select
+              name="categories"
+              id="categories"
+            >
+              <option
+                value=""
+                selected
+              >
+                All Categories
+              </option>
+              <option value="breakfast">breakfast</option>
+              <option value="lunch">lunch</option>
+              <option value="dinner">dinner</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Search for recipes..."
+            />
+          </div>
+          <button>
+            <img
+              src="./images/searchIcon.svg"
+              alt="Search for recipes..."
+            />
+          </button>
+        </div>
+
+        <!-- Nav Right -->
+        <div class="nav--right">
+          <menu>
+            <li>
+              <a
+                href="#"
+                class="active"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#"> Explore </a>
+            </li>
+            <li>
+              <a href="#"> Help </a>
+            </li>
+          </menu>
+
+          <div>
+            <img
+              src="./images/userProfile.svg"
+              alt="User profile"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="showcase container">
+        <div>
+          <h4>Trending now</h4>
+          <p>Mike’s famous salad with cheese</p>
+          <small>By John Mike</small>
+        </div>
+
+        <div class="arrow--container">
+          <img
+            src="./images/arrayLeftRoundedLeft.svg"
+            alt="arrayLeftRoundedLeft"
+          />
+          <img
+            src="./images/arrayLeftRoundedRight.svg"
+            alt="arrayLeftRoundedRight"
+          />
+        </div>
+        <div class="showcase--dot">
+          <span></span>
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="categories container">
+        <!-- Item1 -->
+        <div class="categories--item">
+          <span>Recipes & Menus</span>
+          <img
+            src="./images/ArrayRight.svg"
+            alt=""
+          />
+        </div>
+        <!-- Item1 -->
+        <div class="categories--item">
+          <span>Recipes & Menus</span>
+          <img
+            src="./images/ArrayRight.svg"
+            alt=""
+          />
+        </div>
+        <!-- Item2 -->
+        <div class="categories--item">
+          <span>Recipes & Menus</span>
+          <img
+            src="./images/ArrayRight.svg"
+            alt=""
+          />
+        </div>
+        <!-- Item1 -->
+        <div class="categories--item">
+          <span>Recipes & Menus</span>
+          <img
+            src="./images/ArrayRight.svg"
+            alt=""
+          />
+        </div>
+        <!-- Item1 -->
+        <div class="categories--item">
+          <span>Recipes & Menus</span>
+          <img
+            src="./images/ArrayRight.svg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- Recipes -->
+      <section class="container">
+        <section class="recipes">
+          <!-- Recip 1 -->
+          <div class="recipes--list">
+            <img
+              alt="Russian Salad"
+              class="recipes-img"
+              src="./images/recipe1.png"
+            />
+            <h5>Dairy Free</h5>
+            <div class="recipes-wrapper">
+              <div class="recipes-top">
+                <h4>Russian Salad</h4>
+                <div class="recipes--rating">
+                  <img
+                    src="./images/star.svg"
+                    alt="star"
+                  />
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div class="recipes-top">
+                <h4>40 min</h4>
+                <div>
+                  <img
+                    src="./images/heart.svg"
+                    alt="heart"
+                  />
+                  <img
+                    src="./images/comments.svg"
+                    alt="comments"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recip 2 -->
+          <div class="recipes--list">
+            <img
+              class="recipes-img"
+              alt="Russian Salad"
+              src="./images/recipes2.png"
+            />
+            <h5>Dairy Free</h5>
+            <div class="recipes-wrapper">
+              <div class="recipes-top">
+                <h4>Russian Salad</h4>
+                <div class="recipes--rating">
+                  <img
+                    src="./images/star.svg"
+                    alt="star"
+                  />
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div class="recipes-top">
+                <h4>40 min</h4>
+                <div>
+                  <img
+                    src="./images/heart.svg"
+                    alt="heart"
+                  />
+                  <img
+                    src="./images/comments.svg"
+                    alt="comments"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recip 3 -->
+          <div class="recipes--list">
+            <img
+              class="recipes-img"
+              alt="Russian Salad"
+              src="./images/recipe1.png"
+            />
+            <h5>Dairy Free</h5>
+            <div class="recipes-wrapper">
+              <div class="recipes-top">
+                <h4>Russian Salad</h4>
+                <div class="recipes--rating">
+                  <img
+                    src="./images/star.svg"
+                    alt="star"
+                  />
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div class="recipes-top">
+                <h4>40 min</h4>
+                <div>
+                  <img
+                    src="./images/heart.svg"
+                    alt="heart"
+                  />
+                  <img
+                    src="./images/comments.svg"
+                    alt="comments"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recip 4 -->
+          <div class="recipes--list">
+            <img
+              class="recipes-img"
+              alt="Russian Salad"
+              src="./images/recipe1.png"
+            />
+            <h5>Dairy Free</h5>
+            <div class="recipes-wrapper">
+              <div class="recipes-top">
+                <h4>Russian Salad</h4>
+                <div class="recipes--rating">
+                  <img
+                    src="./images/star.svg"
+                    alt="star"
+                  />
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div class="recipes-top">
+                <h4>40 min</h4>
+                <div>
+                  <img
+                    src="./images/heart.svg"
+                    alt="heart"
+                  />
+                  <img
+                    src="./images/comments.svg"
+                    alt="comments"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recip 4 -->
+          <div class="recipes--list">
+            <img
+              class="recipes-img"
+              alt="Russian Salad"
+              src="./images/recipe1.png"
+            />
+            <h5>Dairy Free</h5>
+            <div class="recipes-wrapper">
+              <div class="recipes-top">
+                <h4>Russian Salad</h4>
+                <div class="recipes--rating">
+                  <img
+                    src="./images/star.svg"
+                    alt="star"
+                  />
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div class="recipes-top">
+                <h4>40 min</h4>
+                <div>
+                  <img
+                    src="./images/heart.svg"
+                    alt="heart"
+                  />
+                  <img
+                    src="./images/comments.svg"
+                    alt="comments"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recip 4 -->
+          <div class="recipes--list">
+            <img
+              class="recipes-img"
+              alt="Russian Salad"
+              src="./images/recipe1.png"
+            />
+            <h5>Dairy Free</h5>
+            <div class="recipes-wrapper">
+              <div class="recipes-top">
+                <h4>Russian Salad</h4>
+                <div class="recipes--rating">
+                  <img
+                    src="./images/star.svg"
+                    alt="star"
+                  />
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div class="recipes-top">
+                <h4>40 min</h4>
+                <div>
+                  <img
+                    src="./images/heart.svg"
+                    alt="heart"
+                  />
+                  <img
+                    src="./images/comments.svg"
+                    alt="comments"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recip 4 -->
+          <div class="recipes--list">
+            <img
+              class="recipes-img"
+              alt="Russian Salad"
+              src="./images/recipes2.png"
+            />
+            <h5>Dairy Free</h5>
+            <div class="recipes-wrapper">
+              <div class="recipes-top">
+                <h4>Russian Salad</h4>
+                <div class="recipes--rating">
+                  <img
+                    src="./images/star.svg"
+                    alt="star"
+                  />
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div class="recipes-top">
+                <h4>40 min</h4>
+                <div>
+                  <img
+                    src="./images/heart.svg"
+                    alt="heart"
+                  />
+                  <img
+                    src="./images/comments.svg"
+                    alt="comments"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Recip 4 -->
+          <div class="recipes--list">
+            <img
+              class="recipes-img"
+              alt="Russian Salad"
+              src="./images/recipe1.png"
+            />
+            <h5>Dairy Free</h5>
+            <div class="recipes-wrapper">
+              <div class="recipes-top">
+                <h4>Russian Salad</h4>
+                <div class="recipes--rating">
+                  <img
+                    src="./images/star.svg"
+                    alt="star"
+                  />
+                  <span>4.5</span>
+                </div>
+              </div>
+              <div class="recipes-top">
+                <h4>40 min</h4>
+                <div>
+                  <img
+                    src="./images/heart.svg"
+                    alt="heart"
+                  />
+                  <img
+                    src="./images/comments.svg"
+                    alt="comments"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Recommended Recipes</h2>
+          <section class="recipes">
+            <!-- Recip 1 -->
+            <div class="recipes--list">
+              <img
+                class="recipes-img"
+                alt="Russian Salad"
+                src="./images/recipe1.png"
+              />
+              <h5>Dairy Free</h5>
+              <div class="recipes-wrapper">
+                <div class="recipes-top">
+                  <h4>Russian Salad</h4>
+                  <div class="recipes--rating">
+                    <img
+                      src="./images/star.svg"
+                      alt="star"
+                    />
+                    <span>4.5</span>
+                  </div>
+                </div>
+                <div class="recipes-top">
+                  <h4>40 min</h4>
+                  <div>
+                    <img
+                      src="./images/heart.svg"
+                      alt="heart"
+                    />
+                    <img
+                      src="./images/comments.svg"
+                      alt="comments"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Recip 2 -->
+            <div class="recipes--list">
+              <img
+                class="recipes-img"
+                alt="Russian Salad"
+                src="./images/recipes2.png"
+              />
+              <h5>Dairy Free</h5>
+              <div class="recipes-wrapper">
+                <div class="recipes-top">
+                  <h4>Russian Salad</h4>
+                  <div class="recipes--rating">
+                    <img
+                      src="./images/star.svg"
+                      alt="star"
+                    />
+                    <span>4.5</span>
+                  </div>
+                </div>
+                <div class="recipes-top">
+                  <h4>40 min</h4>
+                  <div>
+                    <img
+                      src="./images/heart.svg"
+                      alt="heart"
+                    />
+                    <img
+                      src="./images/comments.svg"
+                      alt="comments"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Recip 3 -->
+            <div class="recipes--list">
+              <img
+                class="recipes-img"
+                alt="Russian Salad"
+                src="./images/recipe1.png"
+              />
+              <h5>Dairy Free</h5>
+              <div class="recipes-wrapper">
+                <div class="recipes-top">
+                  <h4>Russian Salad</h4>
+                  <div class="recipes--rating">
+                    <img
+                      src="./images/star.svg"
+                      alt="star"
+                    />
+                    <span>4.5</span>
+                  </div>
+                </div>
+                <div class="recipes-top">
+                  <h4>40 min</h4>
+                  <div>
+                    <img
+                      src="./images/heart.svg"
+                      alt="heart"
+                    />
+                    <img
+                      src="./images/comments.svg"
+                      alt="comments"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Recip 4 -->
+            <div class="recipes--list">
+              <img
+                class="recipes-img"
+                alt="Russian Salad"
+                src="./images/recipe1.png"
+              />
+              <h5>Dairy Free</h5>
+              <div class="recipes-wrapper">
+                <div class="recipes-top">
+                  <h4>Russian Salad</h4>
+                  <div class="recipes--rating">
+                    <img
+                      src="./images/star.svg"
+                      alt="star"
+                    />
+                    <span>4.5</span>
+                  </div>
+                </div>
+                <div class="recipes-top">
+                  <h4>40 min</h4>
+                  <div>
+                    <img
+                      src="./images/heart.svg"
+                      alt="heart"
+                    />
+                    <img
+                      src="./images/comments.svg"
+                      alt="comments"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Recip 4 -->
+            <div class="recipes--list">
+              <img
+                class="recipes-img"
+                alt="Russian Salad"
+                src="./images/recipe1.png"
+              />
+              <h5>Dairy Free</h5>
+              <div class="recipes-wrapper">
+                <div class="recipes-top">
+                  <h4>Russian Salad</h4>
+                  <div class="recipes--rating">
+                    <img
+                      src="./images/star.svg"
+                      alt="star"
+                    />
+                    <span>4.5</span>
+                  </div>
+                </div>
+                <div class="recipes-top">
+                  <h4>40 min</h4>
+                  <div>
+                    <img
+                      src="./images/heart.svg"
+                      alt="heart"
+                    />
+                    <img
+                      src="./images/comments.svg"
+                      alt="comments"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Recip 4 -->
+            <div class="recipes--list">
+              <img
+                class="recipes-img"
+                alt="Russian Salad"
+                src="./images/recipe1.png"
+              />
+              <h5>Dairy Free</h5>
+              <div class="recipes-wrapper">
+                <div class="recipes-top">
+                  <h4>Russian Salad</h4>
+                  <div class="recipes--rating">
+                    <img
+                      src="./images/star.svg"
+                      alt="star"
+                    />
+                    <span>4.5</span>
+                  </div>
+                </div>
+                <div class="recipes-top">
+                  <h4>40 min</h4>
+                  <div>
+                    <img
+                      src="./images/heart.svg"
+                      alt="heart"
+                    />
+                    <img
+                      src="./images/comments.svg"
+                      alt="comments"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Recip 4 -->
+            <div class="recipes--list">
+              <img
+                class="recipes-img"
+                alt="Russian Salad"
+                src="./images/recipes2.png"
+              />
+              <h5>Dairy Free</h5>
+              <div class="recipes-wrapper">
+                <div class="recipes-top">
+                  <h4>Russian Salad</h4>
+                  <div class="recipes--rating">
+                    <img
+                      src="./images/star.svg"
+                      alt="star"
+                    />
+                    <span>4.5</span>
+                  </div>
+                </div>
+                <div class="recipes-top">
+                  <h4>40 min</h4>
+                  <div>
+                    <img
+                      src="./images/heart.svg"
+                      alt="heart"
+                    />
+                    <img
+                      src="./images/comments.svg"
+                      alt="comments"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Recip 4 -->
+            <div class="recipes--list">
+              <img
+                class="recipes-img"
+                alt="Russian Salad"
+                src="./images/recipe1.png"
+              />
+              <h5>Dairy Free</h5>
+              <div class="recipes-wrapper">
+                <div class="recipes-top">
+                  <h4>Russian Salad</h4>
+                  <div class="recipes--rating">
+                    <img
+                      src="./images/star.svg"
+                      alt="star"
+                    />
+                    <span>4.5</span>
+                  </div>
+                </div>
+                <div class="recipes-top">
+                  <h4>40 min</h4>
+                  <div>
+                    <img
+                      src="./images/heart.svg"
+                      alt="heart"
+                    />
+                    <img
+                      src="./images/comments.svg"
+                      alt="comments"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <div class="more">
+          <button>Load More</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="container footer-wrapper">
+        <!-- One -->
+        <div class="logo">
+          <img
+            src="./images/logo.svg"
+            alt="logo"
+          />
+          <p>
+            Cookpal is a recipe website with a wide variety of delicious
+            recipes, easy-to-use search function. Join our community and let's
+            cook together!
+          </p>
+        </div>
+        <!-- Two -->
+        <div class="footer-info">
+          <h4>Company</h4>
+          <ul>
+            <li>Home</li>
+            <li>Explore</li>
+            <li>Team</li>
+            <li>About Us</li>
+            <li>Activity</li>
+          </ul>
+        </div>
+        <!-- Three -->
+        <div class="footer-info">
+          <h4>Resources</h4>
+          <ul>
+            <li>Blog</li>
+            <li>use cases</li>
+            <li>Testimonials</li>
+            <li>Insights</li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <img
+            src="./images/logo.svg"
+            alt="logo"
+          />
+          <p>
+            Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan
+            aliquam.
+          </p>
+          <div class="subscribeInput">
+            <div class="form">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+              />
+              <img
+                src="./images/at.svg"
+                alt="At"
+              />
+            </div>
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </section>
+      <div class="social">
+        <img
+          src="./images/intagram.svg"
+          alt="intagram"
+        />
+        <img
+          src="./images/x.svg"
+          alt="x"
+        />
+        <img
+          src="./images/linkedin.svg"
+          alt="linkedin"
+        />
+        <img
+          src="./images/facebook.svg"
+          alt="facebook"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
